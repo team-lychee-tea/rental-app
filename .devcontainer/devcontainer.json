@@ -1,0 +1,10 @@
+{
+  "name": "Rental App",
+  "dockerComposeFile": "../docker-compose.yml",
+  "workspaceFolder": "/app",
+  "service": "frontend",
+  "forwardPorts": [3000],
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  }
+}
