@@ -11,9 +11,14 @@
     "format": "npm run lint:fix && prettier --write 'src/**/*.{js,jsx,ts,tsx}'",
     "preview": "vite preview",
     "docker:start": "docker compose up -d",
-    "docker:stop": "docker compose down"
+    "docker:stop": "docker compose down",
+    "deploy": "npm run build && firebase deploy",
+    "release:major": "bash ./shells/release.sh major",
+    "release:minor": "bash ./shells/release.sh minor",
+    "release:patch": "bash ./shells/release.sh patch"
   },
   "dependencies": {
+    "firebase": "^10.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
