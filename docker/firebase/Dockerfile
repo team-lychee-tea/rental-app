@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 
 RUN apt update && \
-    apt install -y curl openjdk-17-jdk && \
+    apt install -y curl openjdk-17-jdk git && \
     curl -fsSL https://deb.nodesource.com/setup_18.x | bash - && \
     apt install -y nodejs
 
