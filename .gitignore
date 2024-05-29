@@ -25,3 +25,8 @@ dist-ssr
 
 .env
 
+docker/firebase/bin
+docker/firebase/config
+docker/firebase/src
+
+

@@ -1,5 +1,6 @@
 import { getAnalytics } from "firebase/analytics";
 import { initializeApp } from "firebase/app";
+import { connectFirestoreEmulator, getFirestore } from "firebase/firestore";
 
 const env = import.meta.env;
 
@@ -15,3 +16,10 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 getAnalytics(app);
+const db = getFirestore(app);
+
+if (env.VITE_USE_EMULATOR === "true") {
+  connectFirestoreEmulator(db, "localhost", 8080);
+}
+
+export { db };
