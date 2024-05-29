@@ -5,4 +5,6 @@ ENV TZ Asia/Tokyo
 WORKDIR /app
 
 RUN apt-get update \
-  && apt-get install -y git
+  && apt-get install -y git\
+  && npm install -g firebase-tools
+
