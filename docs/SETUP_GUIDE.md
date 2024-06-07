@@ -19,6 +19,8 @@
 
      [GoogleドライブのRental Appフォルダ](https://drive.google.com/drive/folders/1goNzDbFLeeUnFS8euaE5ZFmcrgxXuINQ)から`.env`ファイルをダウンロードし、プロジェクト直下に配置
 
+     ダウンロードしたときにフィアル名が変更されることがあるので、`.env`になっていることを確認！
+
  1. #### コンテナの立ち上げおよびコンテナへの入室
 
     VS Codeでクローンしたフォルダ「rental-app」を開いた状態であることを確認。
